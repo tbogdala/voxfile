@@ -22,5 +22,11 @@ A `.vox` file can be loaded with the following statement:
 voxFile, err := DecodeFile("testdata/chr_sword.vox")
 ```
 
+License
+-------
+
+Voxfile is released under the BSD license. See the [LICENSE][license-link] file for more details.
+
 
 [1]: https://ephtracy.github.io/
+[license-link]: https://raw.githubusercontent.com/tbogdala/voxfile/master/LICENSE
