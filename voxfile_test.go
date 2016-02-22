@@ -52,7 +52,7 @@ func TestFileLoad(t *testing.T) {
 		t.Errorf("Color #1 of the palette doesn't match what it should.")
 	}
 
-	if voxFile.Palette[2].R != 0xff || voxFile.Palette[2].G != 0xcc || voxFile.Palette[2].B != 0xff || voxFile.Palette[2].A != 0xff {
+	if voxFile.Palette[2].R != 0xff || voxFile.Palette[2].G != 0xff || voxFile.Palette[2].B != 0xcc || voxFile.Palette[2].A != 0xff {
 		t.Errorf("Color #2 of the palette doesn't match what it should.")
 	}
 }

@@ -262,10 +262,10 @@ func instancePalette(p [256]uint32) []*Color {
 		color := &Color{}
 
 		value := p[i]
-		color.A = uint8(value & 0x000000ff)
-		color.B = uint8((value & 0x0000ff00) >> 8)
-		color.G = uint8((value & 0x00ff0000) >> 16)
-		color.R = uint8((value & 0xff000000) >> 24)
+		color.R = uint8(value & 0x000000ff)
+		color.G = uint8((value & 0x0000ff00) >> 8)
+		color.B = uint8((value & 0x00ff0000) >> 16)
+		color.A = uint8((value & 0xff000000) >> 24)
 
 		palette[i] = color
 	}
