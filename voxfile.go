@@ -107,7 +107,9 @@ func Decode(r *bufio.Reader) (*VoxFile, error) {
 	_, err = readChunk(r, voxelFile)
 
 	// if we didn't have a custom palette, make an instance of the default one
-	voxelFile.Palette = instancePalette(defaultPalette)
+	if voxelFile.Palette == nil {
+		voxelFile.Palette = instancePalette(defaultPalette)
+	}
 
 	return voxelFile, err
 }
