@@ -1,5 +1,5 @@
-VOXFILE
-=======
+Voxfile v1.0.0
+==============
 
 Voxfile is a library to load .vox files which is a storage solution for
 voxel models and scenes. Editors like [MagicaVoxel][1].
